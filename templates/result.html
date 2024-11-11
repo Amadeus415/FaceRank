@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    {% if error %}
+        <h1>Error: {{ error }}</h1>
+    {% else %}
+        <h1>Beauty Score</h1>
+        <p>Male Score: {{ beauty['male_score'] }}</p>
+        <p>Female Score: {{ beauty['female_score'] }}</p>
+        <h2>Estimated Age: {{ age['value'] }}</h2>
+    {% endif %}
+    <br>
+    <a href="{{ url_for('index') }}">Try Another Photo</a>
+</body>
+</html>
