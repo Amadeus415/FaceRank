@@ -1,0 +1,7 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h1>Your Beauty Score: {{ beauty_score }}</h1>
+<p>Want to improve your score?</p>
+<a href="{{ url_for('main.paywall') }}">Get Personalized Recommendations</a>
+{% endblock %}

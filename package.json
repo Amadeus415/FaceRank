@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build-css": "tailwindcss -i ./facerank/app/static/css/tailwind.css -o ./facerank/app/static/css/output.css"
+  },
+  
+  "dependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
